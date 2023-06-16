@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "sc-plot"
+version = "0.1.0"
+description = "A CLI app for producing sc plots of specific wavelengths from a database"
+authors = ["OctaneOolong <62565951+OctaneOolong@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "src/sc_plot"}]
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.12"
+duckdb = "^0.8.0"
+pandas = "^2.0.1"
+plotly = "^5.14.1"
+numpy = "^1.24.3"
+typer = "^0.9.0"
+wine-analysis-hplc-uv = {path = "/Users/jonathan/mres_thesis/wine_analysis_hplc_uv"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
